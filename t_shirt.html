@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tshirt Corner | Primum Cotton</title>
+    <link class="rounded-full"
+      rel="shortcut icon"
+      href="files/primum_cotton_main_logo.jpg"
+      type="image/x-icon"
+    />
+    <link href="dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="bg-slate-400">
+      <nav class="bg-transparent p-4">
+        <div class="container mx-auto flex items-center justify-between">
+          <a href="index.html" class="w-14 flex items-center"
+            ><img class="rounded-full"
+              src="files/primum_cotton_main_logo.jpg"
+              alt="cotton-canvas-logo"
+            /><span
+              class="ml-3 text-primary text-xl font-bold text-white hidden md:block"
+              >Primum Cotton</span
+            ></a
+          >
+          <div class="hidden md:flex space-x-4">
+            <a
+              href="index.html"
+              class="text-white hover:bg-white hover:bg-opacity-20 px-3 py-2 rounded transition-all duration-300"
+              >Home</a
+            >
+            <a
+              href="t_shirt.html"
+              class="text-white hover:bg-white hover:bg-opacity-20 px-3 py-2 rounded transition-all duration-300"
+              >T-Shirt</a
+            >
+            <a
+              href="order.html"
+              class="text-white hover:bg-white hover:bg-opacity-20 px-3 py-2 rounded transition-all duration-300"
+              >Order</a
+            >
+            <!-- <a
+              href="account.html"
+              class="text-white hover:bg-white hover:bg-opacity-20 px-3 py-2 rounded transition-all duration-300"
+              >Account</a
+            > -->
+          </div>
+          <button
+            id="menu-button"
+            class="md:hidden text-white focus:outline-none"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div id="menu" class="md:hidden hidden mt-2 space-y-2">
+          <a
+            href="index.html"
+            class="block text-white hover:bg-white hover:bg-opacity-20 px-3 py-2 rounded transition-all duration-300"
+            >Home</a
+          >
+          <a
+            href="t_shirt.html"
+            class="block text-white hover:bg-white hover:bg-opacity-20 px-3 py-2 rounded transition-all duration-300"
+            >T-Shirt</a
+          >
+          <a
+            href="order.html"
+            class="block text-white hover:bg-white hover:bg-opacity-20 px-3 py-2 rounded transition-all duration-300"
+            >Order</a
+          >
+          <!-- <a
+            href="account.html"
+            class="block text-white hover:bg-white hover:bg-opacity-20 px-3 py-2 rounded transition-all duration-300"
+            >Account</a
+          > -->
+        </div>
+      </nav>
+    </header>
+
+    <main class="bg-gray-200 p-3">
+      <div
+        class="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 p-2"
+      >
+        <!-- First Card -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img
+            class="w-full h-48 object-cover"
+            src="product_image/black.png"
+            alt="T-Shirt Sample"
+          />
+          <div class="p-4">
+            <h2 class="text-xl font-semibold text-gray-800">Black</h2>
+            <p class="text-gray-600 mt-2">
+              Sleek, tailored black t-shirt offering timeless formal style.
+            </p>
+            <div class="mt-4 flex justify-center">
+              <button
+                class="bg-cyan-700 text-white px-4 py-2 rounded hover:bg-cyan-800 transition-colors duration-300 details-btn" data-popup="black-popup"
+              >
+                Details
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Popup card -->
+        <div
+          id="black-popup"
+          class="popup fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden"
+        >
+          <div class="bg-white p-8 rounded-lg max-w-sm w-full relative">
+            <button
+              class="close-popup absolute top-3 right-3 text-gray-600 hover:text-gray-900"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+            <img
+              class="w-full h-48 object-cover mb-4 mt-3"
+              src="product_image/black.png"
+              alt="T-Shirt Sample"
+            />
+            <h2 class="text-xl font-semibold text-gray-800 mb-2">
+              T-Shirt Details
+            </h2>
+            <p class="text-gray-600 mb-2">Color: Black</p>
+            <p class="text-gray-600 mb-2">Size: S M L XL XXL XXL</p>
+            <p class="text-gray-600 mb-2">ID: 12345</p>
+            <p class="text-gray-600 mb-4">Stock Status: In Stock</p>
+          </div>
+        </div>
+        <!-- second card is here -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img
+            class="w-full h-48 object-cover"
+            src="product_image/coffie.png"
+            alt="T-Shirt Sample"
+          />
+          <div class="p-4">
+            <h2 class="text-xl font-semibold text-gray-800">Coffie</h2>
+            <p class="text-gray-600 mt-2">
+              Elegant coffee t-shirt, blending comfort with formal flair.
+            </p>
+            <div class="mt-4 flex justify-center">
+              <button
+                class="bg-cyan-700 text-white px-4 py-2 rounded hover:bg-cyan-800 transition-colors duration-300 details-btn" data-popup="coffie-popup"
+              >
+                Details
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Popup card -->
+        <div
+          id="coffie-popup"
+          class="popup fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden"
+        >
+          <div class="bg-white p-8 rounded-lg max-w-sm w-full relative">
+            <button
+              class="close-popup absolute top-3 right-3 text-gray-600 hover:text-gray-900"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+            <img
+              class="w-full h-48 object-cover mb-4 mt-3"
+              src="product_image/coffie.png"
+              alt="T-Shirt Sample"
+            />
+            <h2 class="text-xl font-semibold text-gray-800 mb-2">
+              T-Shirt Details
+            </h2>
+            <p class="text-gray-600 mb-2">Color: Coffie</p>
+            <p class="text-gray-600 mb-2">Size: S M L XL XXL XXL</p>
+            <p class="text-gray-600 mb-2">ID: 12345</p>
+            <p class="text-gray-600 mb-4">Stock Status: In Stock</p>
+          </div>
+        </div>
+
+        <!-- Third Card -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img
+            class="w-full h-48 object-cover"
+            src="product_image/green.png"
+            alt="T-Shirt Sample"
+          />
+          <div class="p-4">
+            <h2 class="text-xl font-semibold text-gray-800">Bottle Green</h2>
+            <p class="text-gray-600 mt-2">
+              Sophisticated bottle green t-shirt, perfect for any occasion.
+            </p>
+            <div class="mt-4 flex justify-center">
+              <button
+                class="bg-cyan-700 text-white px-4 py-2 rounded hover:bg-cyan-800 transition-colors duration-300 details-btn"
+                data-popup="green-popup"
+              >
+                Details
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Popup card -->
+        <div
+          id="green-popup"
+          class="popup fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden"
+        >
+          <div class="bg-white p-8 rounded-lg max-w-sm w-full relative">
+            <button
+              class="close-popup absolute top-3 right-3 text-gray-600 hover:text-gray-900"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+            <img
+              class="w-full h-48 object-cover mb-4 mt-3"
+              src="product_image/green.png"
+              alt="T-Shirt Sample"
+            />
+            <h2 class="text-xl font-semibold text-gray-800 mb-2">
+              T-Shirt Details
+            </h2>
+            <p class="text-gray-600 mb-2">Color: Bottle Green</p>
+            <p class="text-gray-600 mb-2">Size: S M L XL XXL</p>
+            <p class="text-gray-600 mb-2">ID: 12345</p>
+            <p class="text-gray-600 mb-4">Stock Status: In Stock</p>
+          </div>
+        </div>
+        
+        <!-- fourth -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img
+            class="w-full h-48 object-cover"
+            src="product_image/grey.png"
+            alt="T-Shirt Sample"
+          />
+          <div class="p-4">
+            <h2 class="text-xl font-semibold text-gray-800">Grey</h2>
+            <p class="text-gray-600 mt-2">
+              Classic grey t-shirt, combining elegance and versatility.
+            </p>
+            <div class="mt-4 flex justify-center">
+              <button
+                class="bg-cyan-700 text-white px-4 py-2 rounded hover:bg-cyan-800 transition-colors duration-300 details-btn"
+                data-popup="grey-popup"
+              >
+                Details
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Popup card -->
+        <div
+          id="grey-popup"
+          class="popup fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden"
+        >
+          <div class="bg-white p-8 rounded-lg max-w-sm w-full relative">
+            <button
+              class="close-popup absolute top-3 right-3 text-gray-600 hover:text-gray-900"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+            <img
+              class="w-full h-48 object-cover mb-4 mt-3"
+              src="product_image/grey.png"
+              alt="T-Shirt Sample"
+            />
+            <h2 class="text-xl font-semibold text-gray-800 mb-2">
+              T-Shirt Details
+            </h2>
+            <p class="text-gray-600 mb-2">Color: Grey</p>
+            <p class="text-gray-600 mb-2">Size: S M L XL XXL</p>
+            <p class="text-gray-600 mb-2">ID: 12345</p>
+            <p class="text-gray-600 mb-4">Stock Status: In Stock</p>
+          </div>
+        </div>
+        
+        <!-- fifth -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img
+            class="w-full h-48 object-cover"
+            src="product_image/lavender.png"
+            alt="T-Shirt Sample"
+          />
+          <div class="p-4">
+            <h2 class="text-xl font-semibold text-gray-800">Lavender</h2>
+            <p class="text-gray-600 mt-2">
+              Chic lavender t-shirt, adding a fresh touch to elegance.
+            </p>
+            <div class="mt-4 flex justify-center">
+              <button
+                class="bg-cyan-700 text-white px-4 py-2 rounded hover:bg-cyan-800 transition-colors duration-300 details-btn"
+                data-popup="lavender-popup"
+              >
+                Details
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Popup card -->
+        <div
+          id="lavender-popup"
+          class="popup fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden"
+        >
+          <div class="bg-white p-8 rounded-lg max-w-sm w-full relative">
+            <button
+              class="close-popup absolute top-3 right-3 text-gray-600 hover:text-gray-900"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+            <img
+              class="w-full h-48 object-cover mb-4 mt-3"
+              src="product_image/lavender.png"
+              alt="T-Shirt Sample"
+            />
+            <h2 class="text-xl font-semibold text-gray-800 mb-2">
+              T-Shirt Details
+            </h2>
+            <p class="text-gray-600 mb-2">Color: Lavender</p>
+            <p class="text-gray-600 mb-2">Size: S M L XL XXL</p>
+            <p class="text-gray-600 mb-2">ID: 12345</p>
+            <p class="text-gray-600 mb-4">Stock Status: In Stock</p>
+          </div>
+        </div>
+        
+
+        <!-- Sixth -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img
+            class="w-full h-48 object-cover"
+            src="product_image/lemon.png"
+            alt="T-Shirt Sample"
+          />
+          <div class="p-4">
+            <h2 class="text-xl font-semibold text-gray-800">Lemon</h2>
+            <p class="text-gray-600 mt-2">
+              Bright lemon t-shirt, infusing style with cheerful vibes.
+            </p>
+            <div class="mt-4 flex justify-center">
+              <button
+                class="bg-cyan-700 text-white px-4 py-2 rounded hover:bg-cyan-800 transition-colors duration-300 details-btn"
+                data-popup="lemon-popup"
+              >
+                Details
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Popup card -->
+        <div
+          id="lemon-popup"
+          class="popup fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden"
+        >
+          <div class="bg-white p-8 rounded-lg max-w-sm w-full relative">
+            <button
+              class="close-popup absolute top-3 right-3 text-gray-600 hover:text-gray-900"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+            <img
+              class="w-full h-48 object-cover mb-4 mt-3"
+              src="product_image/lemon.png"
+              alt="T-Shirt Sample"
+            />
+            <h2 class="text-xl font-semibold text-gray-800 mb-2">
+              T-Shirt Details
+            </h2>
+            <p class="text-gray-600 mb-2">Color: Lemon</p>
+            <p class="text-gray-600 mb-2">Size: S M L XL XXL</p>
+            <p class="text-gray-600 mb-2">ID: 12345</p>
+            <p class="text-gray-600 mb-4">Stock Status: In Stock</p>
+          </div>
+        </div>
+        
+        <!-- Seventh -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img
+            class="w-full h-48 object-cover"
+            src="product_image/marron.png"
+            alt="T-Shirt Sample"
+          />
+          <div class="p-4">
+            <h2 class="text-xl font-semibold text-gray-800">Marron</h2>
+            <p class="text-gray-600 mt-2">
+              Rich maroon t-shirt, exuding warmth and timeless style.
+            </p>
+            <div class="mt-4 flex justify-center">
+              <button
+                class="bg-cyan-700 text-white px-4 py-2 rounded hover:bg-cyan-800 transition-colors duration-300 details-btn"
+                data-popup="marron-popup"
+              >
+                Details
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Popup card -->
+        <div
+          id="marron-popup"
+          class="popup fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden"
+        >
+          <div class="bg-white p-8 rounded-lg max-w-sm w-full relative">
+            <button
+              class="close-popup absolute top-3 right-3 text-gray-600 hover:text-gray-900"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+            <img
+              class="w-full h-48 object-cover mb-4 mt-3"
+              src="product_image/marron.png"
+              alt="T-Shirt Sample"
+            />
+            <h2 class="text-xl font-semibold text-gray-800 mb-2">
+              T-Shirt Details
+            </h2>
+            <p class="text-gray-600 mb-2">Color: Marron</p>
+            <p class="text-gray-600 mb-2">Size: S M L XL XXL</p>
+            <p class="text-gray-600 mb-2">ID: 12345</p>
+            <p class="text-gray-600 mb-4">Stock Status: In Stock</p>
+          </div>
+        </div>
+        
+        <!-- eighth -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img
+            class="w-full h-48 object-cover"
+            src="product_image/navy_blue.png"
+            alt="T-Shirt Sample"
+          />
+          <div class="p-4">
+            <h2 class="text-xl font-semibold text-gray-800">Navy Blue</h2>
+            <p class="text-gray-600 mt-2">
+              Classic navy blue t-shirt, offering sophistication and style.
+            </p>
+            <div class="mt-4 flex justify-center">
+              <button
+                class="bg-cyan-700 text-white px-4 py-2 rounded hover:bg-cyan-800 transition-colors duration-300 details-btn"
+                data-popup="navy-blue-popup"
+              >
+                Details
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Popup card -->
+        <div
+          id="navy-blue-popup"
+          class="popup fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden"
+        >
+          <div class="bg-white p-8 rounded-lg max-w-sm w-full relative">
+            <button
+              class="close-popup absolute top-3 right-3 text-gray-600 hover:text-gray-900"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+            <img
+              class="w-full h-48 object-cover mb-4 mt-3"
+              src="product_image/navy_blue.png"
+              alt="T-Shirt Sample"
+            />
+            <h2 class="text-xl font-semibold text-gray-800 mb-2">
+              T-Shirt Details
+            </h2>
+            <p class="text-gray-600 mb-2">Color: Navy Blue</p>
+            <p class="text-gray-600 mb-2">Size: S M L XL XXL</p>
+            <p class="text-gray-600 mb-2">ID: 12345</p>
+            <p class="text-gray-600 mb-4">Stock Status: In Stock</p>
+          </div>
+        </div>
+        
+
+        <!-- Nineth -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img
+            class="w-full h-48 object-cover"
+            src="product_image/olive.png"
+            alt="T-Shirt Sample"
+          />
+          <div class="p-4">
+            <h2 class="text-xl font-semibold text-gray-800">Olive</h2>
+            <p class="text-gray-600 mt-2">
+              Stylish olive t-shirt, blending earthy tones with elegance.
+            <div class="mt-4 flex justify-center">
+              <button
+                class="bg-cyan-700 text-white px-4 py-2 rounded hover:bg-cyan-800 transition-colors duration-300 details-btn"
+                data-popup="olive-popup"
+              >
+                Details
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Popup card -->
+        <div
+          id="olive-popup"
+          class="popup fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden"
+        >
+          <div class="bg-white p-8 rounded-lg max-w-sm w-full relative">
+            <button
+              class="close-popup absolute top-3 right-3 text-gray-600 hover:text-gray-900"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+            <img
+              class="w-full h-48 object-cover mb-4 mt-3"
+              src="product_image/olive.png"
+              alt="T-Shirt Sample"
+            />
+            <h2 class="text-xl font-semibold text-gray-800 mb-2">
+              T-Shirt Details
+            </h2>
+            <p class="text-gray-600 mb-2">Color: Olive</p>
+            <p class="text-gray-600 mb-2">Size: S M L XL XXL</p>
+            <p class="text-gray-600 mb-2">ID: 12345</p>
+            <p class="text-gray-600 mb-4">Stock Status: In Stock</p>
+          </div>
+        </div>
+        
+        <!-- Ten th -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img
+            class="w-full h-48 object-cover"
+            src="product_image/petrol_blue.png"
+            alt="T-Shirt Sample"
+          />
+          <div class="p-4">
+            <h2 class="text-xl font-semibold text-gray-800">Petrol Blue</h2>
+            <p class="text-gray-600 mt-2">
+              Elegant petrol blue t-shirt, perfect for any occasion.
+            </p>
+            <div class="mt-4 flex justify-center">
+              <button
+                class="bg-cyan-700 text-white px-4 py-2 rounded hover:bg-cyan-800 transition-colors duration-300 details-btn"
+                data-popup="petrol-popup"
+              >
+                Details
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Popup card -->
+        <div
+          id="petrol-popup"
+          class="popup fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden"
+        >
+          <div class="bg-white p-8 rounded-lg max-w-sm w-full relative">
+            <button
+              class="close-popup absolute top-3 right-3 text-gray-600 hover:text-gray-900"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+            <img
+              class="w-full h-48 object-cover mb-4 mt-3"
+              src="product_image/petrol_blue.png"
+              alt="T-Shirt Sample"
+            />
+            <h2 class="text-xl font-semibold text-gray-800 mb-2">
+              T-Shirt Details
+            </h2>
+            <p class="text-gray-600 mb-2">Color: Petrol Blue</p>
+            <p class="text-gray-600 mb-2">Size: S M L XL XXL</p>
+            <p class="text-gray-600 mb-2">ID: 12345</p>
+            <p class="text-gray-600 mb-4">Stock Status: In Stock</p>
+          </div>
+        </div>
+        
+        <!-- Eleventh -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img
+            class="w-full h-48 object-cover"
+            src="product_image/sky_blue.png"
+            alt="T-Shirt Sample"
+          />
+          <div class="p-4">
+            <h2 class="text-xl font-semibold text-gray-800">Sky Blue</h2>
+            <p class="text-gray-600 mt-2">
+              Fresh sky blue t-shirt, adding a light touch of style.
+            </p>
+            <div class="mt-4 flex justify-center">
+              <button
+                class="bg-cyan-700 text-white px-4 py-2 rounded hover:bg-cyan-800 transition-colors duration-300 details-btn"
+                data-popup="sky_blue_popup"
+              >
+                Details
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Popup card -->
+        <div
+          id="sky_blue_popup"
+          class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden"
+        >
+          <div class="bg-white p-8 rounded-lg max-w-sm w-full relative">
+            <button
+              class="close-popup absolute top-3 right-3 text-gray-600 hover:text-gray-900"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+            <img
+              class="w-full h-48 object-cover mb-4 mt-3"
+              src="product_image/sky_blue.png"
+              alt="T-Shirt Sample"
+            />
+            <h2 class="text-xl font-semibold text-gray-800 mb-2">
+              T-Shirt Details
+            </h2>
+            <p class="text-gray-600 mb-2">Color: Sky Blue</p>
+            <p class="text-gray-600 mb-2">Size: S M L XL XXL</p>
+            <p class="text-gray-600 mb-2">ID: 12345</p>
+            <p class="text-gray-600 mb-4">Stock Status: In Stock</p>
+          </div>
+        </div>
+        <!-- twelveth Card is here -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img
+            class="w-full h-48 object-cover"
+            src="product_image/white.png"
+            alt="T-Shirt Sample"
+          />
+          <div class="p-4">
+            <h2 class="text-xl font-semibold text-gray-800">White</h2>
+            <p class="text-gray-600 mt-2">
+              Classic white t-shirt, embodying simplicity and elegance.
+            </p>
+            <div class="mt-4 flex justify-center">
+              <button
+                class="bg-cyan-700 text-white px-4 py-2 rounded hover:bg-cyan-800 transition-colors duration-300 details-btn" data-popup="white-popup"
+              >
+                Details
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Popup card -->
+        <div
+          id="white-popup"
+          class="popup fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden"
+        >
+          <div class="bg-white p-8 rounded-lg max-w-sm w-full relative">
+            <button
+              class="close-popup absolute top-3 right-3 text-gray-600 hover:text-gray-900"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+            <img
+              class="w-full h-48 object-cover mb-4 mt-3"
+              src="product_image/white.png"
+              alt="T-Shirt Sample"
+            />
+            <h2 class="text-xl font-semibold text-gray-800 mb-2">
+              T-Shirt Details
+            </h2>
+            <p class="text-gray-600 mb-2">Color: White</p>
+            <p class="text-gray-600 mb-2">Size: S M L XL XXL XXL</p>
+            <p class="text-gray-600 mb-2">ID: 12345</p>
+            <p class="text-gray-600 mb-4">Stock Status: In Stock</p>
+          </div>
+        </div>
+
+
+        <!-- Next Card Add Here -->
+      </div>
+    </main>
+
+    <footer class="bg-slate-400 text-white py-4 bottom-0 w-full">
+      <div class="max-w-7xl mx-auto px-4">
+        <p class="text-center">
+          &copy; 2024. All rights are reserved by Maruf Hasan.
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/nav.js"></script>
+    <script src="js/tshirt-details.js"></script>
+  </body>
+</html>

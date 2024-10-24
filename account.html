@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar</title>
+    <link rel="shortcut icon" href="img/cotton_fav.svg" type="image/x-icon" />
+    <link href="dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="bg-slate-400">
+      <header>
+        <nav class="bg-transparent p-4">
+          <div class="container mx-auto flex items-center justify-between">
+            <a href="index.html" class="w-14 flex items-center"
+              ><img
+                src="img/cotton_canas_logo_new.svg"
+                alt="cotton-canvas-logo"
+              /><span
+                class="ml-3 text-primary text-xl font-bold text-white hidden md:block"
+                >CottonCanvas</span
+              ></a
+            >
+            <div class="hidden md:flex space-x-4">
+              <a
+                href="index.html"
+                class="text-white hover:bg-white hover:bg-opacity-20 px-3 py-2 rounded transition-all duration-300"
+                >Home</a
+              >
+              <a
+                href="t_shirt.html"
+                class="text-white hover:bg-white hover:bg-opacity-20 px-3 py-2 rounded transition-all duration-300"
+                >T-Shirt</a
+              >
+              <a
+                href="order.html"
+                class="text-white hover:bg-white hover:bg-opacity-20 px-3 py-2 rounded transition-all duration-300"
+                >Order</a
+              >
+              <a
+                href="account.html"
+                class="text-white hover:bg-white hover:bg-opacity-20 px-3 py-2 rounded transition-all duration-300"
+                >Account</a
+              >
+            </div>
+            <button
+              id="menu-button"
+              class="md:hidden text-white focus:outline-none"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div id="menu" class="md:hidden hidden mt-2 space-y-2">
+            <a
+              href="index.html"
+              class="block text-white hover:bg-white hover:bg-opacity-20 px-3 py-2 rounded transition-all duration-300"
+              >Home</a
+            >
+            <a
+              href="t_shirt.html"
+              class="block text-white hover:bg-white hover:bg-opacity-20 px-3 py-2 rounded transition-all duration-300"
+              >T-Shirt</a
+            >
+            <a
+              href="order.html"
+              class="block text-white hover:bg-white hover:bg-opacity-20 px-3 py-2 rounded transition-all duration-300"
+              >Order</a
+            >
+            <a
+              href="account.html"
+              class="block text-white hover:bg-white hover:bg-opacity-20 px-3 py-2 rounded transition-all duration-300"
+              >Account</a
+            >
+          </div>
+        </nav>
+      </header>
+
+      <!-- Profile Section -->
+      <div class="bg-gray-300">
+        <div
+          class="container mx-auto flex flex-col md:flex-row justify-between items-center p-10"
+        >
+          <div class="flex flex-col items-center md:items-start mb-8 md:mb-0">
+            <img
+              class="w-40 rounded md:rounded-full"
+              src="https://scontent.fdac24-3.fna.fbcdn.net/v/t1.6435-9/164621389_288340839315075_1678695418253761869_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHI4a6nBoeY7j_UYsYxmj1Y5GoPVqSzAuLkag9WpLMC4nCxslB5CMYr2PJH57FELUoL6UknLQqfBqrx_9q5zFaD&_nc_ohc=m3SMLF-ReYcQ7kNvgEgIa6Y&_nc_ht=scontent.fdac24-3.fna&oh=00_AYC1nbC7VWcPhbYZE_0YlVDegxoX1PCOYDGYdLlo0ne_wQ&oe=66E3E724"
+              alt="olsen"
+            />
+            <span class="mt-4 text-2xl font-bold">Elizabeth Olsen</span>
+          </div>
+          <hr />
+          <div class="text-lg font-extrabold text-center md:text-left">
+            <h2 class="mb-2">Name: Maruf Hasan</h2>
+            <h2 class="mb-2">Contact: 01717233307</h2>
+            <address class="not-italic">
+              <h2 class="mb-1">Amu Komishonar Goli</h2>
+              <h2 class="mb-1">Fokir Para</h2>
+              <h2 class="mb-1">Sadar</h2>
+              <h2>Dinajpur</h2>
+            </address>
+          </div>
+        </div>
+
+        <!-- Previous Order Section -->
+
+        <div class="container mx-auto p-4">
+          <div class="bg-yellow-300 rounded-lg">
+            <h2 class="p-3 mb-4 text-2xl font-bold text-slate-700">Order History</h2>
+          </div>
+        
+          <div class="overflow-hidden rounded-lg bg-white shadow-lg">
+            <!-- Table for larger screens -->
+            <div class="hidden md:block">
+              <table class="w-full table-auto">
+                <thead class="bg-gray-200">
+                  <tr>
+                    <th class="px-4 py-2 text-left">Product ID</th>
+                    <th class="px-4 py-2 text-left">Size</th>
+                    <th class="px-4 py-2 text-left">Color</th>
+                    <th class="px-4 py-2 text-left">Quantity</th>
+                    <th class="px-4 py-2 text-left">Total Price</th>
+                    <th class="px-4 py-2 text-left">Invoice</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="border px-4 py-2">12345</td>
+                    <td class="border px-4 py-2">L</td>
+                    <td class="border px-4 py-2">Blue</td>
+                    <td class="border px-4 py-2">2</td>
+                    <td class="border px-4 py-2">$40</td>
+                    <td class="border px-4 py-2">
+                      <a href="#" class="text-blue-600 hover:underline">Download</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="border px-4 py-2">67890</td>
+                    <td class="border px-4 py-2">M</td>
+                    <td class="border px-4 py-2">Red</td>
+                    <td class="border px-4 py-2">1</td>
+                    <td class="border px-4 py-2">$20</td>
+                    <td class="border px-4 py-2">
+                      <a href="#" class="text-blue-600 hover:underline">Download</a>
+                    </td>
+                  </tr>
+                  <!-- Add more rows as needed -->
+                </tbody>
+              </table>
+            </div>
+        
+            <!-- Card layout for smaller screens -->
+            <div class="md:hidden bg-gray-300">
+              <div class="space-y-2">
+                <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+                  <div class="text-lg font-bold text-cyan-700 mb-2">Order #12345</div>
+                  <div><strong>Size:</strong> L</div>
+                  <div><strong>Color:</strong> Blue</div>
+                  <div><strong>Quantity:</strong> 2</div>
+                  <div><strong>Total Price:</strong> $40</div>
+                  <a href="#" class="text-blue-600 hover:underline">Download Invoice</a>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+                  <div class="text-lg font-bold text-cyan-700 mb-2">Order #67890</div>
+                  <div><strong>Size:</strong> M</div>
+                  <div><strong>Color:</strong> Red</div>
+                  <div><strong>Quantity:</strong> 1</div>
+                  <div><strong>Total Price:</strong> $20</div>
+                  <a href="#" class="text-blue-600 hover:underline">Download Invoice</a>
+                </div>
+                <!-- Add more cards as needed -->
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+      <footer class="bg-slate-400 text-white py-4 bottom-0 w-full">
+        <div class="max-w-7xl mx-auto px-4">
+          <p class="text-center">
+            &copy; 2024. All rights are reserved by Maruf Hasan.
+          </p>
+        </div>
+      </footer>
+
+      <script src="js/nav.js"></script>
+      <script src="js/tshirt-details.js"></script>
+    </main>
+  </body>
+</html>

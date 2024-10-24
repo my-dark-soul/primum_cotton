@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar</title>
+    <link rel="shortcut icon" href="img/cotton_fav.svg" type="image/x-icon">
+    <link href="dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="bg-gray-300">
+      <header>
+        <nav class="bg-transparent p-4">
+          <div class="container mx-auto flex items-center justify-between">
+            <a href="#" class="w-14 flex items-center"><img src="img/cotton_canas_logo_new.svg" alt="cotton-canvas-logo"><span class="ml-3 text-primary text-xl font-bold text-blue-600 hidden md:block">CottonCanvas</span></a>
+            <div class="hidden md:flex space-x-4">
+              <a href="#" class="text-white hover:bg-white hover:bg-opacity-20 px-3 py-2 rounded transition-all duration-300"
+                >Home</a
+              >
+              <a href="#" class="text-white hover:bg-white hover:bg-opacity-20 px-3 py-2 rounded transition-all duration-300"
+                >About</a
+              >
+              <a href="create_invoice.html" class="text-white hover:bg-white hover:bg-opacity-20 px-3 py-2 rounded transition-all duration-300"
+                >Order</a
+              >
+              <a href="#" class="text-white hover:bg-white hover:bg-opacity-20 px-3 py-2 rounded transition-all duration-300"
+                >Account</a
+              >
+            </div>
+            <button
+              id="menu-button"
+              class="md:hidden text-white focus:outline-none"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div id="menu" class="md:hidden hidden mt-2 space-y-2">
+            <a
+              href="#"
+              class="block text-white hover:bg-white hover:bg-opacity-20 px-3 py-2 rounded transition-all duration-300"
+              >Home</a
+            >
+            <a
+              href="#"
+              class="block text-white hover:bg-white hover:bg-opacity-20 px-3 py-2 rounded transition-all duration-300"
+              >About</a
+            >
+            <a
+              href="create_invoice.html"
+              class="block text-white hover:bg-white hover:bg-opacity-20 px-3 py-2 rounded transition-all duration-300"
+              >Order</a
+            >
+            <a
+              href="#"
+              class="block text-white hover:bg-white hover:bg-opacity-20 px-3 py-2 rounded transition-all duration-300"
+              >Account</a
+            >
+          </div>
+        </nav>
+      </header>
+
+      <footer class="bg-blue-500 text-white py-4 bottom-0 w-full">
+        <div class="max-w-7xl mx-auto px-4">
+          <p class="text-center">
+            &copy; 2024. All rights are reserved by Maruf Hasan.
+          </p>
+        </div>
+      </footer>
+
+      <script src="js/nav.js"></script>
+    </main>
+  </body>
+</html>
